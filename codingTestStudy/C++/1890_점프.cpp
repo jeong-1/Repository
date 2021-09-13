@@ -2,7 +2,7 @@
 using namespace std;
 
 int map[101][101];
-long long dp[101][101];	//dp[a][b]: (a, b)±îÁö ¿Ã ¼ö ÀÖ´Â °æ·ÎÀÇ ¼ö
+long long dp[101][101];	//dp[a][b]: (a, b)ê¹Œì§€ ì˜¬ ìˆ˜ ìˆëŠ” ê²½ë¡œì˜ ìˆ˜
 
 int main() {
 	int n;
@@ -10,8 +10,7 @@ int main() {
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < n; j++)
 			cin >> map[i][j];
-
-	//Á¡ÇÁ¸¦ ÇØ¼­ µµÂøÇÑ °÷ÀÇ dp¿¡ +1À» ÇØÁÜ. Á¡ÇÁ¸¦ ÇØ¼­ map[a][b]¿¡ µµÂøÇß´Ù¸é dp[a][b]¿¡ +1. dp[a][b]°ª == map[a][b]¸¦ °ÅÄ£ È½¼ö
+	
 	int jump, down, right;
 	dp[0][0] = 1;
 	for (int i = 0; i < n; i++) {
