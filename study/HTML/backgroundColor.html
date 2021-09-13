@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script >
+		window.onload = function(){
+			var headers = document.querySelectorAll('h1');
+
+			var array = ['black','yellow','blue'];
+			for(var i=0; i<headers.length; i++){
+				var header = headers[i];
+				header.style.color = 'orange';
+				header.style.backgroundColor = array[i];
+				header.innerHTML = 'From'
+			}
+		};
+	</script>
+</head>
+<body>
+	<h1>Header</h1>
+	<h1>Header</h1>
+	<h1>Header</h1>
+</body>
+</html>
