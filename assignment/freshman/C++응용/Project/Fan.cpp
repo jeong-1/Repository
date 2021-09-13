@@ -24,6 +24,7 @@ double Fan::getRadius()
 	return radius;
 }
 
+//
 char Fan::getColor()
 {
 	return color[20];
