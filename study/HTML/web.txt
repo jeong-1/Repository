@@ -1,0 +1,76 @@
+본질적인 정보(본문)→body tag에 들어감
+<h1>첫번째 크기 제목</h1> 	//heading1 제목1
+<h2>두번째 크기 제목</h2>	//heading2 제목2
+<h3>세번째 크기 제목</h3>	//heading3 제목3
+<p>안녕하세요.</p>		//paragraph 단락
+<br>				//a forced line break 띄어쓰기(단락 구분도 가능)
+<strong>wow</strong>		//강조
+<a href="https:~">들어가기</a>	//anchor 링크(현재 페이지가 변경)
+<a href="~" target="_blank">들어가기</a>		//anchor 링크(새 탭이 열림)
+
+<li>항목1</li>				//list 리스트
+<ul> <li></li> </ul>			//unordered list 순서가 없는 리스트 (리스트 그룹핑에 사용)
+<ol> <li></li> </ol>			//ordered list 순서가 있는 리스트 (리스트 그룹핑에 사용)
+
+<img src="moon.jpg" width="600" height="700">	//image 이미지 파일(닫히는 태그 필요x)
+						//width 가로길이, height 세로길이(둘 중 하나만 쓰면 브라우저가 알아서 원본 비율로 계산해줌)
+<img src="moona.jpg" alt="달 이미지">		//alternative text  이미지가 깨졌을 때 alt 속성값이 화면에 표시됨
+<img src="moona.jpg" title="pixabay 출처">		//title(속성o, 태그x) 마우스를 올려놓았을 때 도움말이 뜸
+
+<table><td></td> </table>		//table 표
+<table border="1">		//표에 줄 그리기
+<th>제목</th>			//table head 표의 제목(표의 값보다 진하게 표시)
+<td>이름</td>			//table data 표의 값
+<td rowspan="2">			//"2"개의 행(row)을 합쳐줌
+<td colspan="3">			//"3"개의 열(col)을 합쳐줌
+<tr> <td></td> </tr>		//table row 표의 행
+<thead> <tr></tr> </thead>	//table head 표의 제목, 표 상에서 가장 위에 위치(코드에 정보를 명시적으로 표현할 때 쓰임)
+<tbody> <tr></tr> </tbody>	//table body 표의 내용(코드에 정보를 명시적으로 표현할 때 쓰임)
+<tfoot> <tr></tr> </tfoot>		//table foot 표의 끝, 표 상에서 가장 아래에 위치(코드에 정보를 명시적으로 표현할 때 쓰임)
+
+&nbsp;					//공백 삽입하기(spacebar 한 번의 공백)
+<form action="URL"></form>		//정보를 입력하고 제출했을 때 url 서버로 변경
+<textarea></textarea>			//여러 줄을 입력할 수 있는 칸
+<input type="text">			//input 사용자로부터 문자(text) 정보를 입력받음
+<input type="text" name="num">		//속성 name을 통해 이름을 붙여줌
+<input type="text" name="num" value="defalt">	//처음에 입력칸 안에 value값이 들어있게 됨
+<input type="password">			//비밀번호(ex.•••••)를 입력받음
+<input type="submit">			//제출버튼 생성
+<input type="radio">				//radio 라디오 버튼
+<input type="radio" checked>			//항목이 기본적으로 선택됨
+<input type="radio" name="color">			//라디오 버튼은 이름이 같은 것들끼리 그룹핑 됨(같은 그룹 내에서는 하나만 선택 가능)
+<input type="checkbox" name="size">		//checkbox 체크박스, 체크박스도 이름이 같은 것들끼리 그룹핑 됨(같은 그룹 내에서 여러 개 선택 가능)
+<input type="button" value="버튼">			//button 버튼, form action이 불가, 주로 자바스크립트와 사용됨
+<input type="reset">				//text안의 값이 초기화 됨
+<input type="hidden" name="hide" value="jj">	//ui가 없지만 서버로 어떤 값을 전송할 때 사용
+
+<option>붉은색</option>			//option 항목
+<select><option></option></select>	//select 선택지
+
+<label>ID</label>				//label 이름표 (이름표임을 명시적으로 표현할 때 쓰임)
+<label for="id_txt">ID</label>		//어느 것의 이름표인지 명시(text와는 다르게 label은 마우스 커서로 클릭될 수 있음)
+<input id="id_txt" type="text" name="id">	//id를 작성해주어야 label과 연결됨
+<label> <input ~> </label>			//그냥 단순히 label로 감싸주어도 됨
+
+
+부가적인 정보→head tag에 들어감
+<title>Dictionary</title>		//탭의 이름
+<meta charset="utf-8">		//글씨가 깨질 때 추가하면 깨지지 않음
+
+
+
+⁕head tag와 body tag는 html tag에 들어감
+
+html 기본형태
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>

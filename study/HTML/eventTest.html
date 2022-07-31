@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Event</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('h1').on('click', function(evnet) {
+				$('<h1></h1>').text("hello").prependTo('body');
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>To say hello</h1>
+</body>
+</html>
